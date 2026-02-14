@@ -1,0 +1,14 @@
+# --- Core Environment ---
+jupyterlab>=4.0.0      # The IDE
+notebook>=7.0.0        # Classic Notebook interface
+
+# --- Day 1: Linux & Kernel Inspection ---
+psutil>=5.9.5          # For process & system monitoring (CPU, RAM, FDs)
+
+# --- Day 2: Streams & Benchmarking ---
+memory-profiler>=0.61.0 # To measure RAM usage of Python scripts
+tqdm>=4.66.0           # Progress bars for long-running stream jobs
+
+# --- Visualization (Optional but recommended for benchmarks) ---
+pandas>=2.1.0          # To display benchmark results in tables
+matplotlib>=3.8.0      # To plot Read vs mmap speedups
