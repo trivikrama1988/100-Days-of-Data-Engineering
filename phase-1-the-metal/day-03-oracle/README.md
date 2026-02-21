@@ -182,8 +182,7 @@ This is the single most important concept in database reliability (used by Oracl
 
 
 2. **DBWn (Database Writer):** The actual data block (in Buffer Cache) is marked "Dirty" but **NOT** written to the Datafile yet.
-* 
-**Lazy Write:** DBWn wakes up later (every 3 seconds or when cache is full) to scatter-write these blocks to the Datafiles.
+* **Lazy Write:** DBWn wakes up later (every 3 seconds or when cache is full) to scatter-write these blocks to the Datafiles.
 
 
 
