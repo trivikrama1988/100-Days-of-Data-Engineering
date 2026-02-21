@@ -249,8 +249,7 @@ Oracle reads/writes in **8KB Blocks**. Even if you want 1 row (50 bytes), Oracle
 If you `UPDATE` a row and make it bigger (e.g., `VARCHAR(50)` -> `VARCHAR(500)`), it might not fit in the original block's Free Space.
 
 * **Migration:** Oracle moves the *entire* row to a new block and leaves a "Forwarding Address" pointer in the original block.
-* 
-**Performance Hit:** Reading that row now requires **2 Physical I/Os** (Read Address -> Jump -> Read Data).
+* **Performance Hit:** Reading that row now requires **2 Physical I/Os** (Read Address -> Jump -> Read Data).
 
 
 
