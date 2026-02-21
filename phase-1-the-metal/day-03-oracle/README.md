@@ -240,8 +240,7 @@ Oracle reads/writes in **8KB Blocks**. Even if you want 1 row (50 bytes), Oracle
 2. **Table Directory:** Metadata about the table.
 3. **Row Directory:** Pointers to the exact byte offset of rows in the block.
 4. **Free Space:** The empty space in the middle, waiting for new rows.
-5. 
-**Row Data:** The actual data, which grows from the bottom up.
+5. **Row Data:** The actual data, which grows from the bottom up.
 
 
 
