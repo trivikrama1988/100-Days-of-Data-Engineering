@@ -49,8 +49,7 @@ The entire design of a database engine is focused on one problem: **The Gap**.
 
 * **The Gap:** Data is modified in RAM (The Instance) microseconds before it is written to Disk (The Database).
 * **The Risk:** If the power fails during that gap, data is lost.
-* 
-**The Solution:** The **Redo Log** (explained in Section 3.1) bridges this gap.
+* **The Solution:** The **Redo Log** (explained in Section 3.1) bridges this gap.
 
 
 
